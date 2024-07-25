@@ -33,7 +33,8 @@ body{
 .all{
     width: 30px;
     height: 4vh;
-    background-color: red;
+    border-color: blueviolet;
+    background-color: #f00d0d !important;
 }
 .bottom{
     border-bottom: 10px solid green;
