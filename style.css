@@ -17,3 +17,15 @@ body{
 .sec-head{
     color: white;
 }
+.main{
+    background-color: rgb(92, 84, 84);
+}
+#password-length{
+    width: 50px;
+    height: 6vh;
+    margin-top: 10px;
+    border: none;
+    box-shadow: 2px 2px 4px inset grey,
+    -2px -2px 4px inset grey;
+    border-radius: 7px;
+}
