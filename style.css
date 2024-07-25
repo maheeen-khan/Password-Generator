@@ -1,5 +1,5 @@
 body{
-    background-color: #333333 !important;
+    /* background-color: #333333 !important; */
 }
 
 .para{
@@ -12,13 +12,14 @@ body{
     -webkit-text-fill-color: transparent;
 }
 .line{
-    color: white;
+    /* color: white; */
 }
 .sec-head{
     color: white;
 }
 .main{
     background-color: rgb(92, 84, 84);
+    border-radius: 10px;
 }
 #password-length{
     width: 50px;
@@ -28,4 +29,13 @@ body{
     box-shadow: 2px 2px 4px inset grey,
     -2px -2px 4px inset grey;
     border-radius: 7px;
+}
+.all{
+    width: 30px;
+    height: 4vh;
+    background-color: red;
+}
+.bottom{
+    border-bottom: 10px solid green;
+    /* color: white; */
 }
