@@ -21,7 +21,8 @@ body{
 }
 .sec-head{
     /* color: white; */
-    color: rgb(115, 24, 123);
+    /* color: rgb(115, 24, 123); */
+    color: green;
 }
 .main{
     /* background-color: #FFA38F; */
@@ -42,8 +43,7 @@ body{
 .all{
     width: 30px;
     height: 4vh;
-    border-color: blueviolet;
-    background-color: #f00d0d !important;
+    accent-color: green;
 }
 .bottom{
     border: 1px solid green;
@@ -59,12 +59,15 @@ body{
     border-top-right-radius: 0px !important;
 
 }
+/* .check{
+    background-color: green !important;
+} */
 input[type='range']{
     /* color: #f00d0d; */
     overflow: hidden;
     width: 200px;
     -webkit-appearance: none;
-    background-color: yellow;
+    background-color: #ffcb2f;
     border-radius: 20px;
     border: 1px solid #000000;
     cursor: pointer;
@@ -94,3 +97,12 @@ input[type='range']{
     background: #4008cd;
     cursor: pointer;
   } */
+
+  @media screen and (max-width:767px){
+    .sec-head{
+        text-align: center;
+    }
+    .sec-box{
+        margin-left: 19px;
+    }
+  }
