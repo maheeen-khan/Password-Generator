@@ -31,22 +31,30 @@
                 </label>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <input type="checkbox" id="myCheck" value="myvalue" class="all">Uppercase <br>
-                <input type="checkbox" id="myCheck" value="myvalue" class="all">Lowercase <br>
-                <input type="checkbox" id="myCheck" value="myvalue" class="all">Numbers <br>
-                <input type="checkbox" id="myCheck" value="myvalue" class="all">Symbols <br> <br>
 
-                <button type="button" class="btn btn-primary" onclick="checkAll()">Check All</button>
+                <button type="button" class="btn btn-primary" onclick="checkAll()">Check All</button><br><br>
+
+                <input type="checkbox" id="myCheckUpper" value="myvalue" class="all">Uppercase <br>
+                <input type="checkbox" id="myCheckLower" value="myvalue" class="all">Lowercase <br>
+                <input type="checkbox" id="myCheckNumber" value="myvalue" class="all">Numbers <br>
+                <input type="checkbox" id="myCheckSymbol" value="myvalue" class="all">Symbols <br> <br>
+
+          
             </div>
         </div>
 
     </div>
 
+    <!-- 2nd last -->
+     <div class="sec-last text-center">
+        <button class="btn btn-danger" onclick="generate()">Generate</button>
+     </div>
     <!-- bottom -->
 
     <div class="container mt-5">
         <div class="row bottom">
            <h4> Password </h4>
+           <h5 id="password"></h5>
         </div>
     </div>
 </div>
