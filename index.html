@@ -11,9 +11,9 @@
 <div class="container">
     <h1 class="head text-center">Instantly generate a secure, random password with the LastPass online tool</h1>
 
-    <p class="para text-center">Use our online password generator tool to instantly create a secure, random password.</p>
+    <!-- <p class="para text-center">Use our online password generator tool to instantly create a secure, random password.</p> -->
 
-    <hr class="line">
+    <!-- <hr class="line"> --> <br>
 
     <!-- main -->
 
@@ -21,18 +21,18 @@
         <div class="row p-3">
             <div class="col">
                 <h3 class="sec-head">Customize your password</h3>
-            </div>  <hr>
+            </div>  <hr class="inner-line">
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <label for="password-length">
+            <div class="col-lg-6 col-md-6 col-sm-12"> <br>
+                <label for="password-length" class="ms-4">
                 Password Length <br>
+                <input type="range" name="range" id="range" value="12" onblur="blur()" min="6" max="20"> <br>
                 <input type="number" name="password-length" id="password-length">
                 </label>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
 
-                <button type="button" class="btn btn-primary" onclick="checkAll()">Check All</button><br><br>
 
                 <input type="checkbox" id="myCheckUpper" value="myvalue" class="all">Uppercase <br>
                 <input type="checkbox" id="myCheckLower" value="myvalue" class="all">Lowercase <br>
@@ -40,6 +40,8 @@
                 <input type="checkbox" id="myCheckSymbol" value="myvalue" class="all">Symbols <br> <br>
 
           
+                <button type="button" class="btn btn-primary" onclick="checkAll()">Check All</button><br><br>
+
             </div>
         </div>
 
@@ -47,14 +49,14 @@
 
     <!-- 2nd last -->
      <div class="sec-last text-center">
-        <button class="btn btn-danger" onclick="generate()">Generate</button>
+        <button class="btn btn-danger last-btn" onclick="generate()">Generate</button>
      </div>
     <!-- bottom -->
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-3">
         <div class="row bottom">
-           <h4> Password </h4>
-           <h5 id="password"></h5>
+           <h4> Password: </h4>
+           <h5 id="password"  class="ms-2"></h5>
         </div>
     </div>
 </div>

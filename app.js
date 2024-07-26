@@ -5,9 +5,9 @@ function checkAll() {
     }
 }
 
-
-
 function generate() {
+    
+    document.getElementById('password-length').value = document.getElementById('range').value;
 
     //fetch value of Password Length
     var a = document.getElementById('password-length').value;
@@ -45,7 +45,7 @@ function generate() {
     // console.log(isSpecialSymbol);
 
     //  console.log(randomArray)
-    
+
     document.getElementById('password').innerHTML = ""; // Clear previous password
 
     for (var i = 0; i < a; i++) {
@@ -54,4 +54,5 @@ function generate() {
         // document.write(randomArray[Math.floor(Math.random()*randomArray.length)]);
     }
 
+    console.log( document.getElementById('range').value);
 }
