@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,72 +8,77 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
 </head>
+
 <body>
-<div class="container">
-    <h1 class="head text-center">Instantly generate a secure, random password with the LastPass online tool</h1>
+    <div class="container">
+        <h1 class="head text-center">Instantly generate a secure, random password with the LastPass online tool</h1>
 
-    <!-- <p class="para text-center">Use our online password generator tool to instantly create a secure, random password.</p> -->
+        <!-- <p class="para text-center">Use our online password generator tool to instantly create a secure, random password.</p> -->
 
-    <!-- <hr class="line"> --> <br>
-    <div class="container mt-3 mb-3">
-        <div class="row bottom text-center">
-           <h6 style="color: rgb(109, 107, 107);"> Password: </h6>
-           <h5 id="password"  class="ms-1"></h5>
-        </div>
-    </div>
-    <!-- main -->
-
-    <div class="container main">
-        <div class="row p-3">
-            <div class="col">
-                <h3 class="sec-head">Customize your password</h3>
-            </div>  <hr class="inner-line">
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 mb-5"> <br>
-                <label for="password-length" class="ms-4">
-                Password Length <br>
-                <input type="range" name="range" id="range" value="12" onblur="blur()" min="6" max="20" class="my-4"> <br>
-                <input type="number" name="password-length" id="password-length" class="ps-3" value="12" readonly>
-                </label>
-            </div>
-            
-            <div class="col-lg-6 col-md-6 col-sm-12 sec-box">
-
-
-                <input type="checkbox" id="myCheckUpper" value="myvalue" class="all"> Uppercase <br>
-                <input type="checkbox" id="myCheckLower" value="myvalue" class="all"> Lowercase <br>
-                <input type="checkbox" id="myCheckNumber" value="myvalue" class="all"> Numbers <br>
-                <input type="checkbox" id="myCheckSymbol" value="myvalue" class="all"> Symbols <br> <br>
-
-          
-                <button type="button" class="btn btn-primary check" onclick="checkAll()">Check All</button><br><br>
-
+        <!-- <hr class="line"> --> <br>
+        <div class="container mt-3 mb-3">
+            <div class="row bottom text-center">
+                <h6 style="color: rgb(109, 107, 107);"> Password: </h6>
+                <h5 id="password" class="ms-1"></h5>
             </div>
         </div>
+        <!-- main -->
 
-    </div>
+        <div class="container main">
+            <div class="row p-3">
+                <div class="col">
+                    <h3 class="sec-head">Customize your password</h3>
+                </div>
+                <hr class="inner-line">
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-5"> <br>
+                    <label for="password-length" class="ms-4">
+                        Password Length <br>
+                        <input type="range" name="range" id="range" value="12" onblur="blur()" min="6" max="20"
+                            class="my-4"> <br>
+                        <input type="number" name="password-length" id="password-length" class="ps-3" value="12"
+                            readonly>
+                    </label>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 sec-box">
+
+
+                    <input type="checkbox" id="myCheckUpper" value="myvalue" class="all"> Uppercase <br>
+                    <input type="checkbox" id="myCheckLower" value="myvalue" class="all"> Lowercase <br>
+                    <input type="checkbox" id="myCheckNumber" value="myvalue" class="all"> Numbers <br>
+                    <input type="checkbox" id="myCheckSymbol" value="myvalue" class="all"> Symbols <br> <br>
+
+
+                    <button type="button" class="btn btn-primary check" onclick="checkAll()">Check All</button><br><br>
+
+                </div>
+            </div>
+
+        </div>
 
 
 
-    <!-- 2nd last -->
-     <div class="sec-last text-center">
-        <button class="btn btn-warning last-btn" onclick="generate()">Generate</button>
-     </div>
-    <!-- bottom -->
+        <!-- 2nd last -->
+        <div class="sec-last text-center">
+            <button class="btn btn-warning last-btn" onclick="generate()">Generate</button>
+        </div>
+        <!-- bottom -->
         <!-- warning section -->
 
         <div id="warning" class="text-center mt-2 bg-danger">
 
         </div>
-    <!-- <div class="container mt-5 mb-3">
+        <!-- <div class="container mt-5 mb-3">
         <div class="row bottom text-center">
            <h6> Password: </h6>
            <h5 id="password"  class="ms-1"></h5>
         </div>
     </div> -->
-</div>
+    </div>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

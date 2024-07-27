@@ -1,14 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var rangeInput = document.getElementById('range');
-    var passwordLengthInput = document.getElementById('password-length');
-
-    // Add event listener to update password length input when range input changes
-    rangeInput.addEventListener('input', function() {
-        passwordLengthInput.value = rangeInput.value;
-    });
-});
-
-
 function checkAll() {
     var inputs = document.querySelectorAll('.all');
     for (var i = 0; i < inputs.length; i++) {
@@ -17,7 +6,7 @@ function checkAll() {
 }
 
 function generate() {
-    
+
     document.getElementById('password-length').value = document.getElementById('range').value;
 
     //fetch value of Password Length
@@ -50,12 +39,12 @@ function generate() {
         randomArray += "~!@#$%^&*_";
     }
 
-    if(isLower === false && isNum === false && isSpecialSymbol === false && isUpper === false){
+    if (isLower === false && isNum === false && isSpecialSymbol === false && isUpper === false) {
         document.getElementById('warning').innerText = `Please select the category for the type of password you want. ⚠️`;
         document.getElementById('warning').style.display = 'block';
         return;
     }
-    
+
 
     // console.log(isUpper);
     // console.log(isLower);
@@ -72,5 +61,16 @@ function generate() {
         // document.write(randomArray[Math.floor(Math.random()*randomArray.length)]);
     }
 
-    console.log( document.getElementById('range').value);
+    console.log(document.getElementById('range').value);
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var rangeInput = document.getElementById('range');
+    var passwordLengthInput = document.getElementById('password-length');
+
+    // Add event listener to update password length input when range input changes
+    rangeInput.addEventListener('input', function () {
+        passwordLengthInput.value = rangeInput.value;
+    });
+});
