@@ -98,6 +98,12 @@ input[type='range']{
     cursor: pointer;
   } */
 
+  #warning{
+    display: none;
+    border-radius: 20px;
+    color: white;
+    padding: 4px;
+  }
   @media screen and (max-width:767px){
     .sec-head{
         text-align: center;

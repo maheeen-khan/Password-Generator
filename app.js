@@ -39,13 +39,20 @@ function generate() {
         randomArray += "~!@#$%^&*_";
     }
 
+    if(isLower === false && isNum === false && isSpecialSymbol === false && isUpper === false){
+        document.getElementById('warning').innerText = `Please select the category for the type of password you want. ⚠️`;
+        document.getElementById('warning').style.display = 'block';
+        return;
+    }
+    
+
     // console.log(isUpper);
     // console.log(isLower);
     // console.log(isNum);
     // console.log(isSpecialSymbol);
 
     //  console.log(randomArray)
-
+    document.getElementById('warning').style.display = 'none';
     document.getElementById('password').innerHTML = ""; // Clear previous password
 
     for (var i = 0; i < a; i++) {
