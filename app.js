@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var rangeInput = document.getElementById('range');
+    var passwordLengthInput = document.getElementById('password-length');
+
+    // Add event listener to update password length input when range input changes
+    rangeInput.addEventListener('input', function() {
+        passwordLengthInput.value = rangeInput.value;
+    });
+});
+
+
 function checkAll() {
     var inputs = document.querySelectorAll('.all');
     for (var i = 0; i < inputs.length; i++) {
